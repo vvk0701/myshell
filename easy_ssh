@@ -3,3 +3,6 @@
 function rmkh -d "removes a given host from ~/.ssh/known_hosts"
   ssh-keygen -R "$argv" -f "/path/to/.ssh/known_hosts"
 end
+
+function login -d "ssh to a hostname"
+ssh root@"$argv"
