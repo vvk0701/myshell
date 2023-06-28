@@ -1,0 +1,5 @@
+#To remove a particular hostname from known_hosts
+
+function rmkh -d "removes a given host from ~/.ssh/known_hosts"
+  ssh-keygen -R "$argv" -f "/path/to/.ssh/known_hosts"
+end
